@@ -19,9 +19,13 @@ int main(void)
 			putchar(' ');
 			putchar(j / 10 + 48);
 			putchar(j % 10 + 48);
-		}
 
-		putchar(' ');
+			if (j == 99 && i == 98)
+				break;
+
+			putchar(',');
+			putchar(' ');
+		}
 	}
 
 	return (0);
