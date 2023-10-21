@@ -13,6 +13,7 @@ void times_table(void)
 		{
 			if (i * j < 10)
 			{
+				_putchar(' ');
 				_putchar(i * j + 48);
 			}
 			else
