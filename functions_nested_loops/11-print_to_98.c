@@ -18,7 +18,8 @@ void print_num(int n)
 	else
 	{
 		_putchar(n / 100 + 48);
-		print_num(n % 100 * 100);
+		_putchar(n / 10 % 10 + 48);
+		_putchar(n % 10 + 48);
 	}
 }
 
@@ -28,20 +29,26 @@ void print_num(int n)
  */
 void print_to_98(int n)
 {
-	int i;
+	int i = n;
 
-	for (i = n; i <= 98; i++)
+	while ((n <= 98 && i <= 98) || (n >= 98 && i >= 98))
 	{
 		if (i < 0)
+		{
+			_putchar('-');
 			print_num(-i);
+		}
 		else
+		{
 			print_num(i);
+		}
 
-		if (i < 98)
+		if (i != 98)
 		{
 			_putchar(',');
 			_putchar(' ');
 		}
+		n >= 98 ? i-- : i++;
 	}
 
 	_putchar('\n');
