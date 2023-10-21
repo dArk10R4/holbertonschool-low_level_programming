@@ -10,10 +10,15 @@ void print_num(int n)
 	{
 		_putchar(n + 48);
 	}
-	else
+	else if (n < 100)
 	{
 		_putchar(n / 10 + 48);
 		_putchar(n % 10 + 48);
+	}
+	else
+	{
+		_putchar(n / 100 + 48);
+		print_num(n % 100 * 100);
 	}
 }
 
