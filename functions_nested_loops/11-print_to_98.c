@@ -48,6 +48,9 @@ void print_to_98(int n)
 			_putchar(',');
 			_putchar(' ');
 		}
+		if (i == 98)
+			break;
+
 		n >= 98 ? i-- : i++;
 	}
 
