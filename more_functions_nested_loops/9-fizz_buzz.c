@@ -25,4 +25,6 @@ int main(void)
 		else
 			putchar('\n');
 	}
+
+	return (0);
 }
