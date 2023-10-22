@@ -7,6 +7,6 @@
 int _isupper(int c)
 {
 	if ((int)'A' <= c && (int)'Z' >= c)
-		return 1;
-	return 0;
+		return (1);
+	return (0);
 }
