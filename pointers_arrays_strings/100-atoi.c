@@ -1,13 +1,13 @@
 /**
- * _atoi - prints num
+ * _atoi - prints
  * @s: char *
  *
- * Return int
+ * Return: int
  */
 int _atoi(char *s)
 {
 	unsigned int num = 0;
-	int sign = 1;
+	short int sign = 1;
 	int len = 0;
 
 	while (*(s + len))
@@ -17,6 +17,7 @@ int _atoi(char *s)
 
 		if (*(s + len) >= '0' && *(s + len) <= '9')
 			num = num * 10 + *(s + len) - 48;
+		len++;
 	}
 
 	return (num * sign);
