@@ -6,8 +6,11 @@
   */
 void puts2(char *str)
 {
-	int len = sizeof(str);
+	int len = 0;
 	int i;
+
+	while (*(s + len))
+		len++;
 
 	for (i = 0; i <= len; i += 2)
 	{

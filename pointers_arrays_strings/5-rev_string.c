@@ -4,8 +4,11 @@
   */
 void rev_string(char *s)
 {
-	int len = sizeof(s) + 1;
+	int len = 0;
 	int x;
+
+	while (*(s + len))
+                len++
 
 	for (x = 0; x < len / 2; x++)
 	{
