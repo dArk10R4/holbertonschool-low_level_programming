@@ -6,7 +6,7 @@
   */
 void puts_half(char *str)
 {
-	int size = sizeof(str) / sizeof(char);
+	int size = sizeof(str);
 	int i;
 
 	for (i = size / 2; i > 0; i--)
