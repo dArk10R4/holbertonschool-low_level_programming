@@ -2,7 +2,7 @@
 
 /**
   * puts2 - puts
-  * @srt: char*
+  * @str: char*
   */
 void puts2(char *str)
 {
