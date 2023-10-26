@@ -4,7 +4,7 @@
   */
 void rev_string(char *s)
 {
-	int len = sizeof(s) / sizeof(char);
+	int len = sizeof(s) + 1;
 	int x;
 
 	for (x = 0; x < len / 2; x++)
