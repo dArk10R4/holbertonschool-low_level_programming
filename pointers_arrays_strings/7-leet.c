@@ -20,6 +20,7 @@ char *leet(char *s)
 				break;
 			}
 		}
+		i++;
 	}
 
 	return (s);
