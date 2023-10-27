@@ -10,14 +10,14 @@ char *_strstr(char *haystack, char *needle)
 	int i = 0, j = 0;
 	short int c = 0;
 
-	while (*(s + i))
+	while (*(haystack + i))
 	{
 		j = 0;
 		c = 1;
 
-		while (*(s + i) && *(accept + j))
+		while (*(haystack + i) && *(needle + j))
 		{
-			if (*(s + i) != *(accept + j))
+			if (*(haystack + i) != *(needle + j))
 			{
 				c = 0;
 				break;
@@ -28,7 +28,9 @@ char *_strstr(char *haystack, char *needle)
 		}
 
 		if (c)
-			return *(s + i - j);
+			return (haystack + i - j);
+
+		i++;
 	}
 
 	return ('\0');
