@@ -8,6 +8,8 @@ char *cap_string(char *s)
 {
 	int i = 1;
 	int j;
+	char arr[13] = {' ', '\n', '\t', ',', ';', '.', '!', '?', '\"', '(',
+			')', '{', '}'};
 
 	if (*s != '\0' && *s >= 'a' && *s <= 'z')
 		*s = *s - 'a' + 'A';
@@ -20,13 +22,14 @@ char *cap_string(char *s)
 		{
 			for (j = 0; j < 13; j++)
 			{
-				if (*(s + i - 1) == {}[j])
+				if (*(s + i - 1) == arr[j])
 				{
 					*(s + i) = *(s + i) - 'a' + 'A';
 					break;
 				}
 			}
 		}
+		i++;
 	}
 
 	return (s);
