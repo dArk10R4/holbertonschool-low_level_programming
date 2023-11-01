@@ -7,12 +7,12 @@
  */
 int call_back(int n, int i)
 {
-	if (i > n/2)
+	if (i > n / 2)
 		return (-1);
 	if (i * i == n)
 		return (i);
 
-	return call_back(n, i + 1);
+	return (call_back(n, i + 1));
 }
 
 

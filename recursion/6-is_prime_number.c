@@ -27,5 +27,5 @@ int call_back(int n, int i)
  */
 int is_prime_number(int n)
 {
-	return call_back(n, 2);
+	return (call_back(n, 2));
 }
