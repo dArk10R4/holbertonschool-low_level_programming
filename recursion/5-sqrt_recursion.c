@@ -29,5 +29,5 @@ int _sqrt_recursion(int n)
 	if (n < 2)
 		return (n);
 
-	return call_back(n, 1);
+	return (call_back(n, 1));
 }
