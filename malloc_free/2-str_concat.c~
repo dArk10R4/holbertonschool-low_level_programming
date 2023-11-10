@@ -1,0 +1,16 @@
+/**
+ * str_concat - concatiate
+ * @s1: char*
+ * @s2: char*
+ *
+ * Return: char*
+ */
+char *str_concat(char *s1, char *s2)
+{
+	int size = strlen(s1) + strlen(s2);
+	char *s;
+
+	s = malloc(sizeof(char) * (size + 1));
+
+	return (s);
+}
