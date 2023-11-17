@@ -1,0 +1,4 @@
+#ifndef task-0
+#define task-0
+#define SIZE 1024
+#endif
