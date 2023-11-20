@@ -1,5 +1,5 @@
 /**
- * call_back
+ * call_back - calculates sqrt
  * @n: int
  * @i: int
  *
