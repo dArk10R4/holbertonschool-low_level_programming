@@ -1,5 +1,6 @@
 #include <string.h>
 #include <stdlib.h>
+#include "dog.h"
 
 /**
  * init_dog - initialize a dog
