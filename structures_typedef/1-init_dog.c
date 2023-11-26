@@ -11,6 +11,9 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+	if (dog == NULL)
+		return;
+
 	d->name = strdup(name);
 	d->age = age;
 	d->owner = strdup(owner);
