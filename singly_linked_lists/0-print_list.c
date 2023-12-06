@@ -9,27 +9,27 @@
  */
 size_t print_list(const list_t *h)
 {
-  size_t size = 0;
-  char *str;
-  int len;
+	size_t size = 0;
+	char *str;
+	int len;
 
-  while(h)
-    {
-      if (!h->str)
+	while (h)
 	{
-	  str = "(nil)";
-	  len = 0;
-	}
-      else
-	{
-	  str = h->str;
-	  len = h->len;
+		if (!h->str)
+		{
+			str = "(nil)";
+			len = 0;
+		}
+		else
+		{
+			str = h->str;
+			len = h->len;
+		}
+
+		printf("[%d] %s\n", len, str);
+		size++;
+		h = h->next;
 	}
 
-      printf("[%d] %s\n", len, str);
-      size++;
-      h = h->next;
-    }
-
-  return (size);
+	return (size);
 }
