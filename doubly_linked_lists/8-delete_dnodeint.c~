@@ -1,0 +1,52 @@
+#include <stdlib.h>
+#include "lists.h"
+
+/**
+ * delete_dnodeint_at_index - deletes
+ * @head: head
+ * @index: index
+ *
+ * Return: 1 or -1
+ */
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+{
+	unsigned int i = 0;
+	dlistint_t *curr;
+
+	curr = *head;
+
+	if (!(head))
+		return (-1);
+
+	if (index == 0)
+	{
+		if (curr->next)
+		{
+			(*head)->next->prev = NULL;
+			*head = curr->next;
+		}
+		free(curr);
+		curr = NULL;
+
+		return (1);
+	}
+
+
+
+	while (curr && index > i++)
+		curr = curr->next;
+
+	if (!curr || index > i)
+		return (-1);
+
+	if (curr->next)
+	{
+		curr->prev->next = curr->next;
+		curr->next->prev = curr->prev;
+	}
+
+	free(curr);
+	curr = NULL;
+
+	return (1);
+}
