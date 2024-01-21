@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "seach_algos.h"
+#include "search_algos.h"
 
 /**
  * linear_search - linear search
